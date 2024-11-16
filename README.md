@@ -8,8 +8,11 @@ A brief description of what this project does and who it's for
 This is a simple Python program that implements a basic Library Management System. The program allows users to:
 
 1.View available books in the library.
+
 2.Borrow books (if available).
+
 3.Return books to the library.
+
 4.Exit the system.
 ## Features
 
