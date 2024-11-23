@@ -25,6 +25,7 @@ This is a simple Python program that implements a basic Library Management Syste
 ## Program Structure
 Class: Library
 
+- The line if __name__ == "__main__": in Python is a common construct used to control the execution of code when a script is run directly versus when it is imported as a module into another script.
 -__init__(self, books): Initializes the library with a list of books.
 
 -display_books(self): Prints the list of available books.
