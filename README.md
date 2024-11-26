@@ -8,14 +8,14 @@ This Java program implements a simple Library Management System. It allows users
 #### 1.Display Books
 Lists all the books currently available in the library.
 
-#### Borrow a Book
+#### 2.Borrow a Book
 
 Users can borrow a book by entering its name. If the book is available, it is removed from the library's collection. If the book is unavailable, the user is notified.
 
-#### Return a Book
+#### 3.Return a Book
 Users can return a book by entering its name. The book is then added back to the library's collection.
 
-#### Exit
+#### 4.Exit
 Ends the program and thanks the user for using the library system.
 
 ## Code Structure
