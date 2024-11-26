@@ -86,9 +86,9 @@ Ends the program and thanks the user for using the library system.
   Available Books:
 - 1984
 - A Little Life
-- Programming Python
-- Fluent Python
-- Python CookBook
+- The Hobbit
+- The Book Thief
+- War and Peace
 - To Kill a Mockingbird
 
 3.Borrowing a Book:
