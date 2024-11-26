@@ -1,71 +1,111 @@
 
 # Library Management System 
+## Overview
+This Java program implements a simple Library Management System. It allows users to manage a collection of books, including viewing available books, borrowing books, and returning books. The program operates in a menu-driven manner, allowing users to choose actions in a loop until they choose to exit.
 
-A brief description of what this project does and who it's for
 
-
-## Description
-This is a simple Python program that implements a basic Library Management System. The program allows users to:
-
-1.View available books in the library.
-
-2.Borrow books (if available).
-
-3.Return books to the library.
-
-4.Exit the system.
 ## Features
+#### 1.Display Books
+Lists all the books currently available in the library.
 
-- Display Books: Lists all the books currently available in the library.
-- Borrow a Book: Allows a user to borrow a book. The book is removed from the available list upon successful borrowing.
-- Return a Book: Adds a returned book back to the library's list of available books.
-- Exit: Ends the program.
+#### Borrow a Book
 
+Users can borrow a book by entering its name. If the book is available, it is removed from the library's collection. If the book is unavailable, the user is notified.
 
-## Program Structure
-Class: Library
+#### Return a Book
+Users can return a book by entering its name. The book is then added back to the library's collection.
 
+#### Exit
+Ends the program and thanks the user for using the library system.
 
--The line if __name__ == "__main__": in Python is a common construct used to control the execution of code when a script is run directly versus when it is imported as a module into another script.
+## Code Structure
 
--__init__(self, books): Initializes the library with a list of books.
+1.Library Class
 
--display_books(self): Prints the list of available books.
+- Fields:
 
--lend_book(self, book_name): Allows a user to borrow a book if it is available. If not, it informs the user.
+   - books: A list (ArrayList<String>) that stores the names of books in the library.
 
--return_book(self, book_name): Accepts a book and adds it back to the library.
+- Methods:
 
-Main Functionality
+   - Library(ArrayList<String> books): Constructor to initialize the library with a list of books.
+   - displayBooks(): Displays all available books.
+   - lendBook(String bookName): Removes a book from the library if available and notifies the user. Otherwise, it informs the user that the book is unavailable.
+   - returnBook(String bookName): Adds a returned book back to the library's collection and acknowledges the user.
 
--The program runs in a loop, displaying a menu for user interaction.
+2.LibraryManagementSystem Class
 
--Users can select options by entering numbers (1-4).
+- Purpose: Contains the main method, which serves as the program's entry point.
+- Functionality
 
--Input validation is performed to handle invalid choices.
-## Running Tests
+   - Initializes the library with a predefined list of books.
+   - Displays a menu for user interaction:
 
-To run tests, run the following command
+      1.Display available books.
+      2.Borrow a book.
+      3.Return a book.
+      4.Exit the program.
+- Uses a while loop for continuous interaction until the user chooses to exit    
 
-```bash
-  python library.py
+## How to Run
 
-```
+1. Prerequisites:
+  - Install Java Development Kit (JDK) on your system.
 
+  - Set up a Java IDE (e.g., IntelliJ IDEA, Eclipse) or use a terminal/command prompt.
+2. Steps:
+  - Save the code into a file named LibraryManagementSystem.java.
+  - Compile the program using the command:
 
-## Sample Output
-Library Menu:
-1. Display Books
-2. Borrow a Book
-3. Return a Book
-4. Exit
-Enter your choice: 1
+    javac LibraryManagementSystem.java
+  - Run the program using:
 
-Available Books:
+    java LibraryManagementSystem
+3. Usage:
+  - Follow the on-screen menu prompts to interact with the library:
+     
+     - Choose options by entering the corresponding number.
+     - Input book names when prompted.
+
+## Example Walkthrough
+
+1. Starting the Program:
+   
+  Library Menu:
+  1. Display Books
+  2. Borrow a Book
+  3. Return a Book
+  4. Exit
+  Enter your choice: 1
+
+2.Displaying Books:
+  
+  Available Books:
 - 1984
 - A Little Life
 - Programming Python
 - Fluent Python
 - Python CookBook
-- To kill a Mockingbird
+- To Kill a Mockingbird
 
+3.Borrowing a Book:
+
+- Enter your choice: 2
+
+- Enter the name of the book to borrow: 1984
+
+- You borrowed '1984'. Please return it on time!
+
+4.Returning a Book:
+
+- Enter your choice: 3
+
+- Enter the name of the book to return: 1984
+
+- Thank you for returning '1984'!
+
+5.Exiting:
+
+- Enter your choice: 4
+
+- Thank you for using the library!
