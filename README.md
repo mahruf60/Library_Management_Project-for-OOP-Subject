@@ -42,8 +42,11 @@ Ends the program and thanks the user for using the library system.
    - Displays a menu for user interaction:
 
       1.Display available books.
+
       2.Borrow a book.
+
       3.Return a book.
+      
       4.Exit the program.
 - Uses a while loop for continuous interaction until the user chooses to exit    
 
