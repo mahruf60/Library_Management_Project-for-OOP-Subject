@@ -39,9 +39,9 @@ public class LibraryManagementSystem {
         ArrayList<String> initialBooks = new ArrayList<>();
         initialBooks.add("1984");
         initialBooks.add("A Little Life");
-        initialBooks.add("Programming Python");
-        initialBooks.add("Fluent Python");
-        initialBooks.add("Python CookBook");
+        initialBooks.add("The Hobbit");
+        initialBooks.add("The Book Thief");
+        initialBooks.add("War and Peace");
         initialBooks.add("To Kill a Mockingbird");
 
         Library myLibrary = new Library(initialBooks);
